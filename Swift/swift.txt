@@ -1,0 +1,41 @@
+// Your code here!
+
+
+
+var number1:Int?
+
+var number2:Int?
+
+number1 = 3
+//number2 = 4
+
+
+func addNumber(num1:Int?,num2:Int?)->Int{
+    
+    
+guard let number1 = num1, let number2 = num2 else
+{
+        return 0
+    }
+    
+if(number1==number2)
+{
+        
+return (number1+number2)*3
+   
+ 
+}
+ 
+ else{
+
+return number1+number2
+        
+   
+}
+ 
+
+}
+
+
+
+print(addNumber(num1:number1,num2:number2))
